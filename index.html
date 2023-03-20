@@ -5,78 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DMAS</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
       <div class="logo-container">
         <div class="logo">
-            <img src="./images/T401679244619712.png" alt="">
+          <img src="./images/T401679244619712.png" alt="" />
         </div>
       </div>
       <div class="nav-links--container">
-       <ul>
-        <li>Division</li>
-        <li>Multiplying</li>
-        <li>Addition</li>
-        <li>Subtraction</li>
-       </ul>
+        <ul id="myList">
+          <li>Division</li>
+          <li>Multiplying</li>
+          <li>Addition</li>
+          <li>Subtraction</li>
+        </ul>
       </div>
     </nav>
-     <!-- End of nav -->
+    <!-- End of nav -->
 
-      <div class="form-container">
-        <div class="illustration">
-            <img src="./images/bonbon-child-at-math-lesson-with-calculator-and-apple-1.png" alt="">
-        </div>
-          <div class="form">
-            <form action="">
-              <div class="inputbox">
-                <label class="inp" for="inp">
-    <input placeholder="" id="inp" type="text">
-    <span class="label">Input a Number</span>
-    <span class="focus-bg"></span>
-</label>
-                <div class="operator">+</div>
-                
-                     <label class="inp" for="inp">
-    <input placeholder="" id="inp" type="text">
-    <span class="label">Input a Number</span>
-    <span class="focus-bg"></span>
-</label>
-                
-              </div>
-              <div class="inputbox">
-                <h2>Output</h2>
-                <div class="output--wrapper">
-                  <div id="demo" style="color: #fff"></div>
-                </div>
-              </div>
-              <div class="button">
-                <input type="submit" value="Check" class="custom-btn" />
-                <input
-                  type="submit"
-                  value="Refresh"
-                  class="custom-btn"
-                  id="refresh-btn"
-                />
-              </div>
-            </form>
+    <div class="form-container">
+      <div class="illustration">
+        <img
+          src="./images/bonbon-child-at-math-lesson-with-calculator-and-apple-1.png"
+          alt=""
+        />
+      </div>
+      <div class="form">
+        <form action="">
+          <div class="inputbox">
+            <label class="inp" for="inp">
+              <input placeholder="" id="inp-one" type="text" />
+              <span class="label">Input a Number</span>
+              <span class="focus-bg"></span>
+            </label>
+            <div id="operator"></div>
+
+            <label class="inp" for="inp">
+              <input placeholder="" id="inp-two" type="text" />
+              <span class="label">Input a Number</span>
+              <span class="focus-bg"></span>
+            </label>
           </div>
+          <div class="inputbox">
+            <h2>Output</h2>
+            <div class="output--wrapper">
+              <div id="demo" style="color: #fff; text-align: center;font-family:Montserrat;font-size: 1.5em;"></div>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Check" class="custom-btn" />
+            <input
+              type="submit"
+              value="Refresh"
+              class="custom-btn"
+              id="refresh-btn"
+            />
+          </div>
+        </form>
+      </div>
 
-           <div class="illustration">
-            <img src="./images/bonbon-molecular-formula.png" alt="">
-        </div>
-        </div>
+      <div class="illustration">
+        <img src="./images/bonbon-molecular-formula.png" alt="" />
+      </div>
+    </div>
     <footer>
-        <p class="col-12 text-center">
+      <p class="col-12 text-center">
         Copyright ©
-        <script type = 'text/javascript' async src="https://www.google-analytics.com/analytics.js"></script>
-        <script>document.write(new Date().getFullYear());</script>
-        All rights reserved | <span>Made with 💖 by Arizon
-        </span> 
+        <script
+          type="text/javascript"
+          async
+          src="https://www.google-analytics.com/analytics.js"
+        ></script>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved | <span>Made with 💖 by Arizon </span>
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
