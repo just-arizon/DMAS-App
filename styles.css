@@ -20,6 +20,9 @@ div.logo-container {
 .secondlogo img {
   display: none;
 }
+div.harmburger-wrapper{
+ display: none;
+}
 div.harmburger-container {
   display: flex;
   align-items: center;
@@ -46,11 +49,18 @@ li {
   font-family: "Montserrat";
   cursor: pointer;
 }
-
-div.form-container {
+ div.nav-links-hamburger_menu{
+   display: flex;
+   justify-content: center;
+   /* padding: 10px; */
+   
+  }
+ #myHamburgerMenu{
+  display: none;
+  padding: 10px;
+ }
+section{
   display: flex;
-  justify-content: center;
-  height: 70vh;
   background-image: linear-gradient(
     to top,
     #d5d4d0 0%,
@@ -60,11 +70,16 @@ div.form-container {
     #e9e9e7 100%
   );
 }
-div.form {
+div.container {
+  width: 100%;
   min-width: 150px;
-  padding: 6rem;
   display: flex;
   justify-content: space-around;
+  padding: 4rem 0;
+}
+div.form{
+  display: flex;
+  align-items: center;
 }
 .inputbox {
   position: relative;
@@ -228,12 +243,6 @@ footer p {
 
 /* Responsiveness */
 
-@media (max-width: 490px) and (min-width:1022px){
- div.logo-container{
-   display: none;
- }
-}
-
 @media (max-width: 1022px) {
    div.logo-container{
    display: none;
@@ -243,49 +252,74 @@ footer p {
   justify-content: space-between;
   padding: 10px;
 }
- .secondlogo{
-  /* height: 50px; */
- }
+
  .secondlogo img {
   display: block;
   width: 100px;
   height: 50;
 }
-ul li{
-  display: none;
+ul {
+  display: flex;
+  align-items: center;
 }
-    div.form {
+div.container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+  div.form {
   min-width: 150px;
-  padding: 1rem ;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
-  div.form-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-  }
   .inputbox {
   margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
 }
-  div.illustration1 {
-    display: flex;
-    justify-content: center;
+  div.illustration_img {
+    display: none;
   }
-  div.illustration1 img {
-    width: 200px;
+  div.illustratio_img {
+    /* width: 200px; */
     height: auto;
     display: flex;
     justify-content: center;
   }
-  div.illustration {
-    display: none;
-  }
+
   div.operator-container{
     display: flex;
     justify-content: center;
   }
 }
 
+@media screen and (min-width: 290px) and (max-width: 700px){
+  ul#myList{
+    display: none;
+  }
+ 
+  #myHamburgerMenu.active{
+    display: flex;
+    transform: translateY(0);
+  }
+  ul#myHamburgerMenu li{
+    color: #252525;
+    font-family: "Montserrat";
+    font-weight: 900;
+  }
+  div.harmburger-wrapper{
+ display: flex;
+ justify-content: center;
+}
+ .inputbox {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+input #inp-one {
+  width: 100%;
+}
+}
